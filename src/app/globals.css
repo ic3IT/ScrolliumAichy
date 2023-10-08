@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  word-spacing: -0.25rem;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.nes-btn {
+  /* This fixes a bug in NES.css */
+  border-image-repeat: stretch !important;
+}
+
+.nes-input, .nes-textarea {
+  /* This fixes a bug in NES.css */
+  border-image-repeat: stretch !important;
+}
+
+@media (max-width: 768px) {
+  .btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+* {
+  caret-color: transparent;
+}
